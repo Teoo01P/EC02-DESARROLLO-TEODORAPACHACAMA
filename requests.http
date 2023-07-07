@@ -1,12 +1,7 @@
 @subdominio = ec02teodora
 
-GET http://localhost:8080/
- 
-###
-GET http://localhost:8080/idat/codigo
 
-###
-GET http://localhost:8080/idat/nombre-completo
+
 
 ###
 GET https://ec02teodora.onrender.com/
@@ -15,7 +10,7 @@ GET https://ec02teodora.onrender.com/
 GET https://ec02teodora.onrender.com/idat/codigo
 
 ###
-GET https://ec02teodora.onrender.com/idat/nombre-completo
+GET https://ec02teodora.onrender.com/idat/nombrecompleto
 
 
 ##############################################
