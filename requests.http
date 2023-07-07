@@ -1,0 +1,48 @@
+@subdominio = ec02teodora
+
+GET http://localhost:8080/
+ 
+###
+GET http://localhost:8080/idat/codigo
+
+###
+GET http://localhost:8080/idat/nombre-completo
+
+###
+GET https://ec02teodora.onrender.com/
+
+###
+GET https://ec02teodora.onrender.com/idat/codigo
+
+###
+GET https://ec02teodora.onrender.com/idat/nombre-completo
+
+
+##############################################
+#         Requests CON base de datos         #
+##############################################
+# Tabla: cursos:                             #
+#   - id: int (strategy=GenerationType.AUTO) #
+#   - nombre: string                         #
+#   - creditos: int                          #
+##############################################
+
+
+###
+# 4: Listar cursos
+GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
+
+###
+# 5: Nuevo Curso
+POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+name=programacion
+&credito=5
+
+###
+# 6: Eliminar Curso
+DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+id=1
